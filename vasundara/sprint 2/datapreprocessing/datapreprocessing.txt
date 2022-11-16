@@ -1,0 +1,86 @@
+DATA PREPROCESSING
+
+Data preprocessing is a process of preparing the raw data and making it suitable for a machine learning model. 
+It is the first and crucial step while creating a machine learning model.
+
+When creating a machine learning project, it is not always a case that we come across the clean and formatted data. 
+And while doing any operation with data, it is mandatory to clean it and put in a formatted way. So for this, we use data preprocessing task.
+
+
+
+1) Get the Dataset
+To create a machine learning model, the first thing we required is a dataset as a machine learning model completely works on data. 
+The collected data for a particular problem in a proper format is known as the dataset.
+
+Dataset may be of different formats for different purposes, such as, if we want to create a machine learning model for business purpose, then dataset will be different with the dataset required for a liver patient. 
+So each dataset is different from another dataset. To use the dataset in our code, we usually put it into a CSV file. 
+However, sometimes, we may also need to use an HTML or xlsx file.
+
+
+
+DATASET : KAGGLE- PARKINSON'S DRAWING DATASET.
+
+
+2) Importing Libraries
+In order to perform data preprocessing using Python, we need to import some predefined Python libraries. 
+These libraries are used to perform some specific jobs. There are three specific libraries that we will use for data preprocessing
+
+
+
+LIBRARIES: MAINLY INCLUDES numpy, matplotlib, randomforest classifier, histogram of gradients, pandas, os etc...
+
+
+3) Importing the Datasets
+Now we need to import the datasets which we have collected for our machine learning project. 
+But before importing a dataset, we need to set the current directory as a working directory.
+
+
+4) Handling Missing data:
+The next step of data preprocessing is to handle missing data in the datasets. 
+If our dataset contains some missing data, then it may create a huge problem for our machine learning model.
+ Hence it is necessary to handle missing values present in the dataset.
+
+
+NO MISSING DATA AS IT IS AN IMAGE FILE
+
+
+5) Encoding Categorical data:
+Categorical data is data which has some categories such as, in our dataset; there are two categorical variable, Country, and Purchased.
+
+Since machine learning model completely works on mathematics and numbers, but if our dataset would have a categorical variable, then it may create trouble while building the model. 
+So it is necessary to encode these categorical variables into numbers.
+
+
+
+6) Splitting the Dataset into the Training set and Test set
+In machine learning data preprocessing, we divide our dataset into a training set and test set. 
+This is one of the crucial steps of data preprocessing as by doing this, we can enhance the performance of our machine learning model.
+
+Suppose, if we have given training to our machine learning model by a dataset and we test it by a completely different dataset. 
+Then, it will create difficulties for our model to understand the correlations between the models.
+
+
+TRAIN AND TEST MODEL BY MACHINE LEARNING ALGORITHMS : SPLIT BY  test-train split
+
+
+from sklearn.model_selection import train_test_split  
+x_train, x_test, y_train, y_test= train_test_split(x, y, test_size= 0.2, random_state=0)  
+
+
+
+These are the necessary steps for the data preprocessing.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
