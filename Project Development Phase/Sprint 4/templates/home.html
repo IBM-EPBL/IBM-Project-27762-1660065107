@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+<center>
+    <h1 font-color="violet">PARKINSON'S DISEASE PREDICTION</h1>
+    
+    <image src="{{url_for('static',filename='image.jpeg')}}">
+     <h3 class="text-success">Welcome : {{session["name"]}}</h3>
+        
+        </center>
+    
+
+<br><br>
+
+
+    <h4>Parkinson's disease</h4>
+    <p>Parkinson’s disease is a brain disorder that causes unintended or uncontrollable movements, such as shaking, stiffness, and difficulty with balance and coordination.</p>
+    <p>Parkinson's disease is a progressive disorder that affects the nervous system and the parts of the body controlled by the nerves. Symptoms start slowly. The first symptom may be a barely noticeable tremor in just one hand. Tremors are common, but the disorder may also cause stiffness or slowing of movement.</p><br><br>
+    <h5> Causes</h5>
+    People with Parkinson’s disease also lose the nerve endings that produce norepinephrine, the main chemical messenger of the sympathetic nervous system, which controls many functions of the body, such as heart rate and blood pressure. The loss of norepinephrine might help explain some of the non-movement features of Parkinson’s, such as fatigue, irregular blood pressure, decreased movement of food through the digestive tract, and sudden drop in blood pressure when a person stands up from a sitting or lying position.<br><br>
+    <h5>Symptoms</h5><ol>
+ <li>   Tremor in hands, arms, legs, jaw, or head</li> 
+  <li>   Muscle stiffness, where muscle remains contracted for a long time</li> 
+  <li> Slowness of movement</li> 
+ <li>   Impaired balance and coordination, sometimes leading to falls</li> 
+
+    </ol>
+    <h5>Treatment</h5>
+    <p>Although there is no cure for Parkinson’s disease, medicines, surgical treatment, and other therapies can often relieve some symptoms.</p>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
